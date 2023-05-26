@@ -9,7 +9,7 @@ router.use(routerAuth);
 router.use(routerUser);
 
 router.route("/").get(function(req, res) {
-    res.send("Bienvenido a la api de usuarios");
+    res.send("Bienvenido a la api de usuarios. La URI de Mongo es "+process.env.DBURL);
 });
 
 export default router;
