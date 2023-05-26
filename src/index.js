@@ -25,3 +25,4 @@ mongoose.connect(uriMongo,
     })
 })
 
+export default app;
